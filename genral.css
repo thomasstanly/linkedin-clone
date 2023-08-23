@@ -1,0 +1,58 @@
+body{
+    margin: 0px;
+    background-color:rgba(243,242,240,255);
+    font-family: Segoe UI;
+}
+
+.section{
+    margin-top: 76px;
+    display: grid;
+    grid-template-columns:  225px 555px 300px;
+    grid-template-rows: 330px 1fr 1fr;
+    justify-content: center;
+    column-gap: 28px;
+    row-gap: 10px;
+}
+
+.message{
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    height: 50px;
+    width: 280px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.message{
+    border-style:solid ;
+    border-width: 1px;
+    border-color: aqua;
+}
+.message img{
+    height: 30px;
+    border-radius: 15px;
+    transform: translateY(px);
+    transform: translateX(5px);
+}
+.message button{
+    background: none;
+    border: none;
+    border-radius: 20px;
+    height: 35px;
+    width: 35px;
+    transition: background-color .4s;
+}
+.message button:hover{
+    background-color:rgb(196, 228, 228);
+    
+}
+
+.message:hover{
+    cursor: pointer;
+}

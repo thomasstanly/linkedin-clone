@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="genral.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="profileStyling.css">
+    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="feed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/download.png">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-first-section">
+            <a style=" width: 35px;" href="">
+                <img src="images/download.png" alt=" linkedin logo" style="border-radius: 3px; width: 34px; transform: translateY(3px);">
+            </a>
+            <div style="display: flex; align-items: center;">
+                <i class="fa-solid fa-magnifying-glass" style="color: #595959;padding-left: 7px;padding-right: 5px;font-size: small;"></i>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <nav class="header-middle-section">
+            <ul id="menu">
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                            <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"></path>
+                        </svg>
+                        <span class="nav-text">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                            <path d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z"></path>
+                        </svg>
+                        <span class="nav-text">
+                            My Network
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                            <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
+                        </svg>
+                        <span class="nav-text">
+                           Jobs
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                            <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"></path>
+                        </svg>
+                        <span class="nav-text">
+                            Messagimg
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                            <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
+                          </svg>
+                        <span class="nav-text">
+                            Notifications
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img style="width: 25px;border-radius: 12px;" src="images/1691078576141.jpg" alt="profile image">
+                        <span class="nav-text">
+                            Me <i class="fa fa-caret-down" style="font-size:15px;"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                            <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                          </svg>
+                        <span class="nav-text">
+                            For Business <i class="fa fa-caret-down" style="font-size:15px;"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+                            <circle cx="12" cy="4" r="2" style="isolation:isolate" opacity=".75"></circle>
+                            <path d="M21 10H3a1 1 0 00-1 1v10a1 1 0 001 1h18a1 1 0 001-1V11a1 1 0 00-1-1zm-5 9H8v-2h8v2zm2-4H6v-2h12v2z"></path>
+                            <path d="M9.57 5.75l-2.41 4.83 1.68.84 2.28-4.57a3 3 0 01-1.55-1.1zM14.43 5.75a3 3 0 01-1.55 1.1l2.28 4.57 1.68-.84z" style="isolation:isolate" opacity=".55"></path>
+                          </svg>
+                        <span class="nav-text">
+                            Post a job
+                        </span>
+                    </a>
+                </li>
+            </ul>   
+        </nav>
+    </header>
+
+
+    <section class="section">
+        <div class="profile-part-container">
+            <div class="profile">
+                <img class="cover" src="images/Screenshot 2023-08-18 191429.jpg" alt="">
+                <a href="">
+                    <img  src="images/1691078576141.jpg" alt="">
+                </a>
+                <a style="margin-top: -23px;" href="">
+                    Thomas Stanly
+                </a>
+                <p>
+                    2020 BSc Physics graduate with focus on software development
+                </p>
+            </div>
+            <div class="connections">
+                <a class="connections-list" href="">
+                    <span>Connections <br>
+                        <span style="font-weight: 300; font-weight: 500;"> Grow your network</span>
+                    </span> 
+                    <span style="margin-left: 80px;font-weight: 700;">50</span>
+                </a>
+                <a class="connections-list" href="">
+                    <span style="font-weight: 400;">Who's viewed your profile</span>
+                    <span style="margin-left: 48px;font-weight: 700;">11</span>
+                </a>
+            </div>
+
+            <div class="my-items">
+                <a class="my-items-class" href="">
+                    <i class="fa-solid fa-bookmark"></i>
+                    &nbsp;My items
+                </a>
+            </div>
+        </div>
+        
+        <div class="feed-container">
+            <div class="user-post">
+                <div class="text-post">
+                        <img src="images/1691078576141.jpg" alt="">
+                        <input type="text" placeholder="Start a post">
+                </div>
+                <div class="media-post">
+                    <a href="#">
+                        <i class="fa-solid fa-image" style="color: #378fe9; font-size: 18px;"></i>
+                        <span>
+                            &nbsp;Photo
+                        </span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube" style="color: #5f9b41; font-size: 18px;"></i>
+                        <span>&nbsp;Video</span>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#a872e8" class="mercado-match" width="24" height="24" focusable="false">
+                            <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
+                        </svg>
+                        <span style="position: relative;bottom:7px;"> &nbsp;Jobs</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-newspaper" style="color: #e16745; font-size: 18px;"></i>
+                        <span>&nbsp;Write article</span>
+                    </a>
+                </div>
+           </div>
+           <button class="sort-button">
+                <div class="button">
+                    <hr class="divider">
+                    <div class="content">
+                        Sort by:<span style="color: #000000;"> Top<i class="fa fa-caret-down" style="font-size:15px;"></i></span>
+                </div>
+           </button>
+
+            <div class="feed-content">
+                <div class="feed-content-head">
+                    <div  class="feed-content-head-right">
+                        <div>
+                            <img src="images/profile one.jpg" alt="">
+                        </div>
+                        <span style="font-weight: 600; font-size: 14px;"> &nbsp;john &nbsp; </span>
+                        <sspan style="font-size: 14px;"> likes this</span>
+                    </div>
+                    <div  class="feed-content-head-left">
+                        <button>
+                            <i class="fa-solid fa-ellipsis" style="color: #818181; font-size: 19px;"></i>
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-xmark" style="color:rgb(121, 121, 121);font-size: 19px;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="feed-content-second">
+                <div class="feed-content-second-right">
+                        <div>
+                            <img src="images/profile one.jpg" alt="">
+                        </div>
+                        <div>
+                            <p style="font-weight: 600;color: #252525">Qian F. &#183; <span style="font-weight: 400;">2nd</span></p>
+                            <p style="color: #7c7c7c">Help solve structural and engineering</p>
+                            <p style="font-size: 13px ;color: #7c7c7c">
+                                <span>5h</span>
+                                <span style="color: #7c7c7c;">&#183;
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false" style="transform: translateY(3px);">
+                                        <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+                                    </svg>
+                                </span> 
+                            </p>
+                        </div>
+                </div>
+                <div>
+                    <button class="follow-button">
+                        <i class="fa-solid fa-plus" style="color: #0266c2;"></i>&nbsp;Follow
+                    </button>
+                </div>
+                <div>
+
+                </div>
+                </div>
+                <div class="feed-content-third">
+                    Loved by developers, trusted by organizations. SonarCloud has everything you need to deliver clean code in your public or private projects.
+                </div>
+                <div class="feed-content-four">
+                    <img src="images/AAYQAQQSAAgAAQAAAAAAAAMDzOJ8AjwSRx6e4fdD_CFVCw.gif" alt="">
+                </div>
+                <div class="feed-content-five">
+                    <div >
+                    <button class="response">
+                            <i class="fa-regular fa-thumbs-up fa-flip-horizontal"></i>
+                        <span >Like</span>
+                    </button>
+                    </div>
+                    <div>
+                        <button  class="response" style="height: 21px;">
+                            <i class="fa-regular fa-comment"></i>
+                            <span>Comment</span>
+                        </button>
+                    </div>
+                    <div>
+                        <button  class="response">
+                            <i class="fa-solid fa-retweet fa-rotate-90"></i>
+                            <span>Repost</span>
+                        </button>
+                    </div>
+                    <div >
+                    <button class="response">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Send</span>
+                    </button>
+                    </div>
+                </div>
+            </div> 
+
+
+            <div class="feed-content">
+                <div class="feed-content-head">
+                    <div  class="feed-content-head-right">
+                        <div>
+                            <img src="images/profile three.jpg" alt="">
+                        </div>
+                        <span style="font-weight: 600; font-size: 14px;"> &nbsp;susan &nbsp; </span>
+                        <sspan style="font-size: 14px;"> follows this page</span>
+                    </div>
+                    <div  class="feed-content-head-left">
+                        <button>
+                            <i class="fa-solid fa-ellipsis" style="color: #818181; font-size: 19px;"></i>
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-xmark" style="color:rgb(121, 121, 121);font-size: 19px;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="feed-content-second">
+                <div class="feed-content-second-right">
+                        <div>
+                            <img src="images/infopark.jpg" alt="">
+                        </div>
+                        <div>
+                            <p style="font-weight: 600;color: #252525">infopark. &#183; <span style="font-weight: 400;">2nd</span></p>
+                            <p style="color: #7c7c7c">tech hub of kerala</p>
+                            <p style="font-size: 13px ;color: #7c7c7c">
+                                <span>5h</span>
+                                <span style="color: #7c7c7c;">&#183;
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false" style="transform: translateY(3px);">
+                                        <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+                                    </svg>
+                                </span> 
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="follow-button">
+                            <i class="fa-solid fa-plus" style="color: #0266c2;"></i>&nbsp;Follow
+                        </button>
+                    </div>
+                <div>
+
+                </div>
+                </div>
+                <div class="feed-content-third">
+                    Loved by developers, trusted by organizations. SonarCloud has everything you need to deliver clean code in your public or private projects.
+                </div>
+                <div class="feed-content-four">
+                    <img src="images/infoparkfeed.jpg" alt="">
+                </div>
+                <div class="feed-content-five">
+                    <div >
+                    <button class="response">
+                            <i class="fa-regular fa-thumbs-up fa-flip-horizontal"></i>
+                        <span >Like</span>
+                    </button>
+                    </div>
+                    <div>
+                        <button  class="response" style="height: 21px;">
+                            <i class="fa-regular fa-comment"></i>
+                            <span>Comment</span>
+                        </button>
+                    </div>
+                    <div>
+                        <button  class="response">
+                            <i class="fa-solid fa-retweet fa-rotate-90"></i>
+                            <span>Repost</span>
+                        </button>
+                    </div>
+                    <div >
+                    <button class="response">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Send</span>
+                    </button>
+                    </div>
+                </div>
+            </div> 
+
+
+            <div class="feed-content">
+                <div class="feed-content-head">
+                    <div  class="feed-content-head-right">
+                        <div>
+                            <img src="images/profile one.jpg" alt="">
+                        </div>
+                        <span style="font-weight: 600; font-size: 14px;"> &nbsp;jhon &nbsp; </span>
+                        <sspan style="font-size: 14px;"> likes this</span>
+                    </div>
+                    <div  class="feed-content-head-left">
+                        <button>
+                            <i class="fa-solid fa-ellipsis" style="color: #818181; font-size: 19px;"></i>
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-xmark" style="color:rgb(121, 121, 121);font-size: 19px;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="feed-content-second">
+                <div class="feed-content-second-right">
+                        <div>
+                            <img src="images/profile two.jpg" alt="">
+                        </div>
+                        <div>
+                            <p style="font-weight: 600;color: #252525">benedict . &#183; <span style="font-weight: 400;">2nd</span></p>
+                            <p style="color: #7c7c7c">Help solve structural and engineering</p>
+                            <p style="font-size: 13px ;color: #7c7c7c">
+                                <span>5h</span>
+                                <span style="color: #7c7c7c;">&#183;
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false" style="transform: translateY(3px);">
+                                        <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+                                    </svg>
+                                </span> 
+                            </p>
+                        </div>
+                </div>
+                <div>
+                    <button class="follow-button">
+                        <i class="fa-solid fa-plus" style="color: #0266c2;"></i>&nbsp;Follow
+                    </button>
+                </div>
+                <div>
+
+                </div>
+                </div>
+                <div class="feed-content-third">
+                    Loved by developers, trusted by organizations. SonarCloud has everything you need to deliver clean code in your public or private projects.
+                </div>
+                <div class="feed-content-four">
+                    <img src="images/feedone.jpg" alt="">
+                </div>
+                <div class="feed-content-five">
+                    <div >
+                    <button class="response">
+                            <i class="fa-regular fa-thumbs-up fa-flip-horizontal"></i>
+                        <span >Like</span>
+                    </button>
+                    </div>
+                    <div>
+                        <button  class="response" style="height: 21px;">
+                            <i class="fa-regular fa-comment"></i>
+                            <span>Comment</span>
+                        </button>
+                    </div>
+                    <div>
+                        <button  class="response">
+                            <i class="fa-solid fa-retweet fa-rotate-90"></i>
+                            <span>Repost</span>
+                        </button>
+                    </div>
+                    <div >
+                    <button class="response">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Send</span>
+                    </button>
+                    </div>
+                </div>
+            </div> 
+
+
+            <div class="feed-content">
+                <div class="feed-content-head">
+                    <div  class="feed-content-head-right">
+                        <div>
+                            <img src="images/profile one.jpg" alt="">
+                        </div>
+                        <span style="font-weight: 600; font-size: 14px;"> &nbsp;john &nbsp; </span>
+                        <sspan style="font-size: 14px;"> likes this</span>
+                    </div>
+                    <div  class="feed-content-head-left">
+                        <button>
+                            <i class="fa-solid fa-ellipsis" style="color: #818181; font-size: 19px;"></i>
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-xmark" style="color:rgb(121, 121, 121);font-size: 19px;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="feed-content-second">
+                <div class="feed-content-second-right">
+                        <div>
+                            <img src="images/profile one.jpg" alt="">
+                        </div>
+                        <div>
+                            <p style="font-weight: 600;color: #252525">Qian F. &#183; <span style="font-weight: 400;">2nd</span></p>
+                            <p style="color: #7c7c7c">Help solve structural and engineering</p>
+                            <p style="font-size: 13px ;color: #7c7c7c">
+                                <span>5h</span>
+                                <span style="color: #7c7c7c;">&#183;
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false" style="transform: translateY(3px);">
+                                        <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+                                    </svg>
+                                </span> 
+                            </p>
+                        </div>
+                </div>
+                <div>
+                    <button class="follow-button">
+                        <i class="fa-solid fa-plus" style="color: #0266c2;"></i>&nbsp;Follow
+                    </button>
+                </div>
+                <div>
+
+                </div>
+                </div>
+                <div class="feed-content-third">
+                    Loved by developers, trusted by organizations. SonarCloud has everything you need to deliver clean code in your public or private projects.
+                </div>
+                <div class="feed-content-four">
+                    <img src="images/AAYQAQQSAAgAAQAAAAAAAAMDzOJ8AjwSRx6e4fdD_CFVCw.gif" alt="">
+                </div>
+                <div class="feed-content-five">
+                    <div >
+                    <button class="response">
+                            <i class="fa-regular fa-thumbs-up fa-flip-horizontal"></i>
+                        <span >Like</span>
+                    </button>
+                    </div>
+                    <div>
+                        <button  class="response" style="height: 21px;">
+                            <i class="fa-regular fa-comment"></i>
+                            <span>Comment</span>
+                        </button>
+                    </div>
+                    <div>
+                        <button  class="response">
+                            <i class="fa-solid fa-retweet fa-rotate-90"></i>
+                            <span>Repost</span>
+                        </button>
+                    </div>
+                    <div >
+                    <button class="response">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Send</span>
+                    </button>
+                    </div>
+                </div>
+            </div> 
+
+        </div>
+        
+        <div class="linkedin-new-container"> 
+            <div >
+                LinkedIn News 
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-square-fill" viewBox="0 0 16 16" style="fill: black; border-radius:4px;width:12px;">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+            </svg>
+            <ul>
+                <li>
+                    Upskilling, the way forward 
+                    <p>Top news</p>
+                </li>
+                <li>
+                    Gearing up for a career in automation 
+                    <p>2d ago</p>
+                </li>
+                <li>
+                    Broadcasting's FDI windfall 
+                    <p>18h ago</p>
+                </li>
+                <li>
+                    Luxury brands eye Indian buyers
+                    <p>21h ago</p>
+                </li>
+                <li>
+                    SaaS firms hire amid downturn 
+                    <p>18h ago</p>
+                </li>
+            </ul>
+        </div>
+
+        <div  class="sticky-one">
+            <p class="link"><a href="">Group</a></p>
+            <p class="link">
+                <a href="">Events</a>
+                <a style="margin-left: 150px; color: #000000; font-size: medium;" href="">
+                    <i class="fa-solid fa-plus"></i>
+                </a>    
+            </p>
+            <p class="link"><a href="">Followed Hashtags</a></p>
+            <p class="discover">
+                <a href="">Discover more</a>
+            </p>
+        </div>
+        <div class="sticky-two">
+                <div class="ad">
+                    <a href="#">
+                        Ad&nbsp;<i class="fa-solid fa-ellipsis" style="color: #000000;"></i>
+                    </a>
+                </div>
+                <div class="ad-head">
+                    <a href="">Thomas, boost your job with Premium</a>
+                </div>
+                <div class="ad-profile">
+                   <a href="#">
+                    <img class="image" src="images/thomas.jpg" alt="">
+                        <img src="images/linkedinred.jpg" alt="">
+                   </a>
+                </div>
+                <div>
+                    <center>
+                        <a class="discription" href="#">See who's viewed your profile in the last 90 days</a>
+                    </center>
+                    <div>
+                        <a class="button" href="#">
+                            <p class=" button free">Try for Free!</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="message">
+            <img src="images/1691078576141.jpg" alt="">
+            <span style="margin-left: 10px; margin-right: 50px; transform: translateY(-3px);">
+                Messaging
+            </span>
+            <button>
+                <i style="font-size: medium;" class="fa-solid fa-ellipsis-vertical fa-rotate-90"></i>
+            </button>
+           <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                <path d="M15 2.53a1.51 1.51 0 01-.44 1L9.15 9 6 10l1-3.12 5.44-5.44A1.5 1.5 0 0115 2.53zM12 11a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h3V2H5a3 3 0 00-3 3v6a3 3 0 003 3h6a3 3 0 003-3V8h-2z"></path>
+            </svg>
+           </button>
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                    <path d="M15 11L8 6.39 1 11V8.61L8 4l7 4.61z"></path>
+                  </svg>
+            </button>
+
+        </div>
+    </section>
+    
+</body>
+</html>
